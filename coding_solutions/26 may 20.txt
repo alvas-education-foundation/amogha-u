@@ -1,0 +1,18 @@
+Program 1
+Python program to print all numbers which aren't divisible by 2 or 3 and lie between 1-50
+
+for i in range(0,50):
+    if((i%2)!=0) and ((i%3)!=0):
+        print(i)
+
+
+ 
+Program 2
+Python Program to Count the Number of Digits in a Number    
+
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+count=count+1
+n=n//10
+print("The number of digits in the number are:",count)
