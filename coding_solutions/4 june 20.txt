@@ -1,0 +1,20 @@
+Python program to find the size (Resolution) of a image
+
+def jpeg_res(filename):
+withopen(filename,'rb') as img_file:
+isat164thpositionimg_file.seek(163)
+
+#readthe2bytes
+a=img_file.read(2)
+
+#calculateheight
+height=(a[0]<<8)+a[1]
+
+#next2bytesiswidth
+a=img_file.read(2)
+
+#calculatewidth
+width=(a[0]<<8)+a[1]
+
+print("The resolution of thr images is",width,"x",height)
+jpeg_res("img1.jpg")
