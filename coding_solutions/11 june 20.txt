@@ -1,0 +1,17 @@
+Python3 program to  rotate an array by d elements
+
+
+def leftRotate(ar,d,n):
+    for i in range(d):              
+      leftRotatebyOne(ar,n)
+def leftRotatebyOne(ar,n): 
+     temp=ar[0] 
+     for i in range(n-1):
+          ar[i]=ar[i+1] 
+          ar[n-1]=temp
+def printAray(ar,size): 
+     for i in range(size):
+         print("%d"%ar[i],end="")    
+ar=[1,2,3,4,5,6,7] 
+leftRotate(ar,2,7) 
+printAray(ar,7)
